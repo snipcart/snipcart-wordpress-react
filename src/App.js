@@ -31,6 +31,7 @@ class App extends Component {
                 data-item-name={ product.name }
                 data-item-id={ product.id }
                 data-item-image={ product.image }
+                data-item-description={ product.description }
                 data-item-url= { `${this.state.dataRoute}/${product.id}`}
                 data-item-price={ product.price }>
                 Buy it for { product.price } $
@@ -57,7 +58,8 @@ class App extends Component {
       id: product.id,
       price: product.price,
       image: product.image,
-      name: product.title.rendered
+      name: product.title.rendered,
+      description: product.description
     }
   }
 }
