@@ -8,7 +8,7 @@ class App extends Component {
 
     this.state = {
       products: [],
-      dataRoute: 'http://localhost/wp-json/wp/v2/posts'
+      dataRoute: 'https://snipcart-wordpress-json-api.herokuapp.com/wp-json/wp/v2/posts'
     }
   }
 
