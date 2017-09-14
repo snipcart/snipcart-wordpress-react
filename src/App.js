@@ -8,7 +8,7 @@ class App extends Component {
 
     this.state = {
       products: [],
-      dataRoute: 'https://www.advancedcustomfields.com/'
+      dataRoute: 'http://localhost/wp-json/wp/v2/posts'
     }
   }
 
@@ -32,7 +32,7 @@ class App extends Component {
                 data-item-name={ product.name }
                 data-item-id={ product.id }
                 data-item-image={ product.image }
-                data-item-url= { this.state.dataRoute }
+                data-item-url= { `${this.state.dataRoute}/${product.id}`}
                 data-item-price={ product.price }>
                 Buy it for { product.price } $
               </button>
